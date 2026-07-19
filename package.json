@@ -1,21 +1,31 @@
 {
   "name": "manzor-mail",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "next-auth": "^4.24.7",
+    "@prisma/client": "^5.20.0",
+    "bcryptjs": "^2.4.3",
+    "imapflow": "^1.0.181",
+    "mailparser": "^3.7.1",
+    "next": "14.2.35",
+    "next-auth": "4.24.7",
+    "nodemailer": "^6.9.15",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "sanitize-html": "^2.13.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.35",
+    "prisma": "^5.20.0"
   }
 }
