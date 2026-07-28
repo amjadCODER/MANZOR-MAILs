@@ -1,2 +1,0 @@
-import Image from 'next/image'; import LoginForm from '../../components/LoginForm';
-export default function LoginPage(){ return <main className="login-page"><section className="login-card"><Image src="/manzor-tech-logo.png" alt="منظور" width={88} height={88} priority/><div><span className="brand-kicker">MANZOR TECH</span><h1>MANZOR Mail</h1><p>ادارة بريد الجمعيات من مكان واحد</p></div><LoginForm/></section></main> }
